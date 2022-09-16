@@ -3,41 +3,43 @@ import "./Navbar.css";
 
 
 export default function Navbar() {
+
+
   return (
     <nav className="navbar">
       <ul className="navbar__list">
         <li className="navbar__list-item">
-          <a href="#">Loops</a>
+          <a href="#" alt="loops" >Loops</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Conditionals</a>
+          <a href="#" alt="conditionals" >Conditionals</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Iterators</a>
+          <a href="#" alt="iterators" >Iterators</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Array</a>
+          <a href="#" alt="arrays" >Arrays</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Functions</a>
+          <a href="#" alt="functions" >Functions</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Objects</a>
+          <a href="#" alt="objects" >Objects</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Classes</a>
+          <a href="#" alt="classes" >Classes</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">XHR</a>
+          <a href="#" alt="xhr" >XHR</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Promises</a>
+          <a href="#" alt="promises" >Promises</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Async Await</a>
+          <a href="#" alt="async" >Async Await</a>
         </li>
         <li className="navbar__list-item">
-          <a href="#">Modules</a>
+          <a href="#" alt="modules" >Modules</a>
         </li>
       </ul>
     </nav>
