@@ -1,10 +1,11 @@
 import React from "react";
+import { Component } from "react";
 import "./Front.css";
 
 export default function Front() {
   const list = [
     {
-      id: "Loops",
+      id: "loops",
       imgCount: 5,
       imgs: [
         "src/imgs/LOOPS/For Loop.jpg",
@@ -15,7 +16,7 @@ export default function Front() {
       ],
     },
     {
-      id: "Arrays",
+      id: "arrays",
       imgCount: 4,
       imgs: [
         "src/imgs/ARRAYS/Arrays.jpg",
@@ -25,7 +26,7 @@ export default function Front() {
       ],
     },
     {
-      id: "Conditionals",
+      id: "conditionals",
       imgCount: 4,
       imgs: [
         "src/imgs/CONDITIONAL STATEMENTS/Conditional Statements Review.jpg",
@@ -38,22 +39,15 @@ export default function Front() {
   ];
 
   const container = document.querySelector(".front-container");
-  const menuLinks = document.querySelectorAll(".navbar__list-item");
-  console.log(menuLinks)
-  menuLinks.forEach(link => {
-    link.addEventListener("click", () => {
-      console.log(link)
-    })
-})
 
-const onclick = (e) => {
-  if (e.target.value === "blue") {
-    
-  };
-}
+
+
+
+  
+
   return (
     <section className="front-container">
-      
+      <p>Hello</p>
     </section>
   );
-}
+  }
