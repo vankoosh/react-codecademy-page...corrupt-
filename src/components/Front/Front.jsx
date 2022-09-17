@@ -1,53 +1,30 @@
 import React from "react";
-import { Component } from "react";
 import "./Front.css";
 
 export default function Front() {
-  const list = [
-    {
-      id: "loops",
-      imgCount: 5,
-      imgs: [
-        "src/imgs/LOOPS/For Loop.jpg",
-        "src/imgs/LOOPS/While Loop.jpg",
-        "src/imgs/LOOPS/Do While Loop.jpg",
-        "src/imgs/LOOPS/Nested Loop - Comparing Two Arrays.jpg",
-        "src/imgs/LOOPS/Break Keyword.jpg",
-      ],
-    },
-    {
-      id: "arrays",
-      imgCount: 4,
-      imgs: [
-        "src/imgs/ARRAYS/Arrays.jpg",
-        "src/imgs/ARRAYS/Change Array Elements by Assignment.jpg",
-        "src/imgs/ARRAYS/Accesing Index Of Nested Arrays.jpg",
-        "src/imgs/ARRAYS/Nested Loop - Comparing Two Arrays.jpg",
-      ],
-    },
-    {
-      id: "conditionals",
-      imgCount: 4,
-      imgs: [
-        "src/imgs/CONDITIONAL STATEMENTS/Conditional Statements Review.jpg",
-        "src/imgs/CONDITIONAL STATEMENTS/Short-circuit OR Evaluation.jpg",
-        "src/imgs/CONDITIONAL STATEMENTS/Switch Statement.jpg",
-        "src/imgs/CONDITIONAL STATEMENTS/Ternary Operator.jpg",
-        "src/imgs/CONDITIONAL STATEMENTS/Truthy and Falsy Statements.jpg",
-      ],
-    },
-  ];
+  
 
   const container = document.querySelector(".front-container");
 
-
-
+  console.log();
 
   
 
   return (
     <section className="front-container">
-      <p>Hello</p>
+      <img src="" alt="one" />
+      <img src="" alt="two" />
+      <img src="" alt="three" />
+      <img src="" alt="four" />
+      <img src="" alt="five" />
+      <img src="" alt="six" />
+      <img src="" alt="seven" />
+      <img src="" alt="eight" />
+      <img src="" alt="nine" />
+      <img src="" alt="ten" />
+      <img src="" alt="eleven" />
+      <img src="" alt="twelve" />
+      <img src="" alt="thirteen" />
     </section>
   );
   }
