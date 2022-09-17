@@ -1,12 +1,8 @@
 import React from "react";
-import Navbar from "./components/Navbar/Navbar";
-import Front from './components/Front/Front';
+import Parent from "./components/Parent/Parent";
 
 export default function App() {
   return (
-    <>
-      <Navbar />
-      <Front />
-    </>
+    <Parent />
   );
 }
