@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from "../Navbar/Navbar";
-import Front from "../Front/Front";
+import Card from "../Front/Card";
 
 
 export default function Parent() {
@@ -43,7 +43,7 @@ export default function Parent() {
   return (
     <>
       <Navbar />
-      <Front />
+      <Card />
     </>
   );
 }
