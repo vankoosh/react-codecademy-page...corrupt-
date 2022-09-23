@@ -1,0 +1,18 @@
+nav {
+  background-color: red;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+nav ul li {
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+}/*# sourceMappingURL=Parent.css.map */

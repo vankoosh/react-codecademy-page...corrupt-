@@ -1,0 +1,12 @@
+.card{
+  padding: 0.5rem;
+  outline: 5px solid black;
+  flex: 1;
+  // width: 10vw;
+
+  .card__text{
+    font-size: 3rem;
+    background-color: yellow;
+    margin: 0;
+  }
+}
