@@ -1,55 +1,60 @@
-import React, {useState} from 'react';
+import React, { useState } from "react";
 import Card from "../Card/Card";
 
-
 export default function Parent() {
+  const [topic, setTopic] = useState([]);
 
-  const [topic, setTopic] = useState({});
-
-  
   return (
     <>
       <nav>
         <ul>
           <li
             onClick={() => {
-              setTopic({
-                id: "loops",
-                imgCount: 5,
-                imgs: [
-                  "src/imgs/LOOPS/For Loop.jpg",
-                  "src/imgs/LOOPS/While Loop.jpg",
-                  "src/imgs/LOOPS/Do While Loop.jpg",
-                  "src/imgs/LOOPS/Nested Loop - Comparing Two Arrays.jpg",
-                  "src/imgs/LOOPS/Break Keyword.jpg",
-                ],
-              });
+              setTopic([
+                { id: 1, src: "/imgs/LOOPS/ForLoop.jpg" },
+                { id: 2, src: "/imgs/LOOPS/WhileLoop.jpg" },
+                { id: 3, src: "/imgs/LOOPS/DoWhileLoop.jpg" },
+                {
+                  id: 4,
+                  src: "/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
+                },
+                { id: 5, src: "src/imgs/LOOPS/BreakKeyword.jpg" },
+              ]);
             }}
           >
             Loops
           </li>
           <li
             onClick={() => {
-              setTopic({
-                id: "arrays",
-                imgCount: 4,
-                imgs: [
-                  "src/imgs/ARRAYS/Arrays.jpg",
-                  "src/imgs/ARRAYS/Change Array Elements by Assignment.jpg",
-                  "src/imgs/ARRAYS/Accesing Index Of Nested Arrays.jpg",
-                  "src/imgs/ARRAYS/Nested Loop - Comparing Two Arrays.jpg",
-                ],
-              });
+              setTopic([
+                { id: 1, src: "/imgs/ARRAYS/Arrays.jpg" },
+                {
+                  id: 2,
+                  src: "/imgs/ARRAYS/ChangeArrayElementsByAssignment.jpg"
+                },
+                {
+                  id: 3,
+                  src: "/imgs/ARRAYS/AccesingIndexOfNestedArrays.jpg"
+                },
+                {
+                  id: 4,
+                  src: "  /imgs/ARRAYS/NestedLoop-ComparingTwoArrays.jpg"
+                },
+              ]);
             }}
           >
             Arrays
           </li>
         </ul>
       </nav>
-      {topic.imgs.forEach(img => {
-        return (
-          <Card props={topic} />
-        )
+      {/* <img
+        src={imgArrays}
+        width="auto"
+        height="auto"
+        alt=""
+      /> */}
+      {topic.map((img) => {
+        return <Card props={img} key={img.id} />;
       })}
     </>
   );
