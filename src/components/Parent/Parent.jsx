@@ -207,6 +207,7 @@ export default function Parent() {
         </ul>
       </nav>
       <div className="card-container">
+        <p>Hello</p>
       {topic.map((img) => {
         return <Card props={img} key={img.id} />;
       })}
