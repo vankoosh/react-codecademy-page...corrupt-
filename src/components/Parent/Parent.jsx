@@ -55,6 +55,27 @@ export default function Parent() {
           >
             Arrays
           </li>
+          <li
+            onClick={() => {
+              setTopic([
+                { id: 1, src: "/imgs/ARRAYS/Arrays.jpg" },
+                {
+                  id: 2,
+                  src: "/imgs/ARRAYS/ChangeArrayElementsByAssignment.jpg"
+                },
+                {
+                  id: 3,
+                  src: "/imgs/ARRAYS/AccesingIndexOfNestedArrays.jpg"
+                },
+                {
+                  id: 4,
+                  src: "/imgs/ARRAYS/NestedLoop-ComparingTwoArrays.jpg"
+                },
+              ]);
+            }}
+          >
+            Arrays
+          </li>
         </ul>
       </nav>
       <div className="card-container">
