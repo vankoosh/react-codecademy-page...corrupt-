@@ -87,6 +87,36 @@ export default function Parent() {
           >
             Array Iterators
           </li>
+          {/* CONDITIONALS */}
+          <li
+            onClick={() => {
+              setTopic([
+                {
+                  id: 1,
+                  src: "/imgs/CONDITIONALS/ConditionalStatementsReview.jpg",
+                },
+                {
+                  id: 2,
+                  src: "/imgs/CONDITIONALS/SwitchStatement.jpg",
+                },
+                {
+                  id: 3,
+                  src: "/imgs/CONDITIONALS/TernaryOperator.jpg",
+                },
+                {
+                  id: 4,
+                  src: "/imgs/CONDITIONALS/TruthyAndFalsyStatements.jpg",
+                },
+                {
+                  id: 5,
+                  src: "/imgs/CONDITIONALS/Short-circuitOREvaluation.jpg",
+                },
+              ]);
+            }}
+          >
+            CONDITIONALS
+          </li>
+          {/* OBJECTS */}
           <li
             onClick={() => {
               setTopic([
@@ -143,6 +173,36 @@ export default function Parent() {
             }}
           >
             Objects
+          </li>
+          {/* FUNCTIONS */}
+          <li
+            onClick={() => {
+              setTopic([
+                { id: 1, src: "/imgs/FUNCTIONS/FunctionDeclaration.jpg" },
+                {
+                  id: 2,
+                  src: "/imgs/FUNCTIONS/FunctionExpression.jpg",
+                },
+                {
+                  id: 3,
+                  src: "/imgs/FUNCTIONS/ConciseBodyArrowFunctions.jpg",
+                },
+                {
+                  id: 4,
+                  src: "/imgs/FUNCTIONS/DefaultParameter.jpg",
+                },
+                {
+                  id: 5,
+                  src: "/imgs/FUNCTIONS/HelperFunctions.jpg",
+                },
+                {
+                  id: 6,
+                  src: "/imgs/FUNCTIONS/ReturnKeyword.jpg",
+                },
+              ]);
+            }}
+          >
+            Functions
           </li>
         </ul>
       </nav>
