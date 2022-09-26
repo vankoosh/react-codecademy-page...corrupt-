@@ -18,6 +18,7 @@ export default function Parent() {
     <>
       <nav>
         <ul>
+          {/* LOOPS */}
           <li
             onClick={() => {
               setTopic([
@@ -34,6 +35,7 @@ export default function Parent() {
           >
             Loops
           </li>
+          {/* ARRAYS */}
           <li
             onClick={() => {
               setTopic([
@@ -55,26 +57,92 @@ export default function Parent() {
           >
             Arrays
           </li>
+          {/* ARRAY ITERATORS */}
           <li
             onClick={() => {
               setTopic([
-                { id: 1, src: "/imgs/ARRAYS/Arrays.jpg" },
+                { id: 1, src: "/imgs/ARRAY-ITERATORS/filter().jpg" },
                 {
                   id: 2,
-                  src: "/imgs/ARRAYS/ChangeArrayElementsByAssignment.jpg"
+                  src: "/imgs/ARRAY-ITERATORS/findIndex().jpg",
                 },
                 {
                   id: 3,
-                  src: "/imgs/ARRAYS/AccesingIndexOfNestedArrays.jpg"
+                  src: "/imgs/ARRAY-ITERATORS/forEach().jpg",
                 },
                 {
                   id: 4,
-                  src: "/imgs/ARRAYS/NestedLoop-ComparingTwoArrays.jpg"
+                  src: "/imgs/ARRAY-ITERATORS/map().jpg",
+                },
+                {
+                  id: 5,
+                  src: "/imgs/ARRAY-ITERATORS/reduce().jpg",
+                },
+                {
+                  id: 6,
+                  src: "/imgs/ARRAY-ITERATORS/IteratorsExamples.jpg",
                 },
               ]);
             }}
           >
-            Arrays
+            Array Iterators
+          </li>
+          <li
+            onClick={() => {
+              setTopic([
+                { id: 1, src: "/imgs/OBJECTS/ObjectsReview.jpg" },
+                {
+                  id: 2,
+                  src: "/imgs/OBJECTS/AdvancedObjectsReview.jpg",
+                },
+                {
+                  id: 3,
+                  src: "/imgs/OBJECTS/LoopingThroughObjects.jpg",
+                },
+                {
+                  id: 4,
+                  src: "/imgs/OBJECTS/CreatingObjectLiterals.jpg",
+                },
+                {
+                  id: 5,
+                  src: "/imgs/OBJECTS/Destructured{}Assignment.jpg",
+                },
+                {
+                  id: 6,
+                  src: "/imgs/OBJECTS/Built-inMethodsLikeObject.keys().entries().assign().jpg",
+                },
+                {
+                  id: 7,
+                  src: "/imgs/OBJECTS/FactoryFunctions.jpg",
+                },
+                {
+                  id: 8,
+                  src: "/imgs/OBJECTS/ObjectsAndPrivacy.jpg",
+                },
+                {
+                  id: 9,
+                  src: "/imgs/OBJECTS/RefactoringKeyValueShorthand.jpg",
+                },
+                {
+                  id: 10,
+                  src: "/imgs/OBJECTS/Getters.jpg",
+                },
+                {
+                  id: 11,
+                  src: "/imgs/OBJECTS/Setters.jpg",
+                },
+                {
+                  id: 12,
+                  src: "/imgs/OBJECTS/thisKeyword.jpg",
+                },
+                {
+                  id: 13,
+                  src: "/imgs/OBJECTS/thisAndArrowFunctions.jpg",
+                },
+              ]);
+            }}
+          >
+            Objects
           </li>
         </ul>
       </nav>

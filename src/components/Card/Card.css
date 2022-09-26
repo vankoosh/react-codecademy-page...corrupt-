@@ -1,8 +1,11 @@
 .card {
-  padding: 0.5rem;
-  border-right: 2px solid black;
-  border-bottom: 2px solid black;
-  flex: 1;
+  margin: 0;
+  background-color: bisque;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.card .card__img {
+  width: 24vw;
 }
 .card .card__text {
   font-size: 3rem;
