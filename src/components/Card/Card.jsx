@@ -4,7 +4,7 @@ import "./Card.css";
 export default function Card({props}) {
   return (
     <div className='card'>
-      <p className='card__text'></p>
+      <p className='card__text'>{props.count}</p>
       <img src={props.src} className="card__img" alt=""/>
     </div>
 )
