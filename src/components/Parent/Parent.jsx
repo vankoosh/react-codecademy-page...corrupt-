@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Parent.css";
 import Card from "../Card/Card";
 
+// TODO  add modal to small pics 
+
 export default function Parent() {
   const [topic, setTopic] = useState([
     { id: "For Loop", count:"1/5", src: "/imgs/LOOPS/ForLoop.jpg" },
@@ -390,7 +392,44 @@ export default function Parent() {
           >
             ASYNC - AWAIT
           </li>
-          {/* XHR 7 GET-POST */}
+          {/* PROMISES */}
+          <li
+            onClick={() => {
+              setTopic([
+                {
+                  id: "1/7",
+                  src: "/imgs/PROMISES/Promises Review.jpg",
+                },
+                {
+                  id: "2/7",
+                  src: "/imgs/PROMISES/ConstructingAPromiseObject.jpg",
+                },
+                {
+                  id: "3/7",
+                  src: "/imgs/PROMISES/HandlingPromisesWithCallbacks.jpg",
+                },
+                {
+                  id: "4/7",
+                  src: "/imgs/PROMISES/ConsumingPromisesWith.then().jpg",
+                },
+                {
+                  id: "5/7",
+                  src: "/imgs/PROMISES/ConsumingPromisesWith.catch().jpg",
+                },
+                {
+                  id: "6/7",
+                  src: "/imgs/PROMISES/ChainingMultiplePromises.jpg",
+                },
+                {
+                  id: "7/7",
+                  src: "/imgs/PROMISES/Promise.all().jpg",
+                },
+              ]);
+            }}
+          >
+            PROMISES
+          </li>
+          {/* XHR GET-POST */}
           <li
             onClick={() => {
               setTopic([
@@ -427,12 +466,33 @@ export default function Parent() {
           >
             XHR GET-POST
           </li>
+          {/* MODULES */}
+          <li
+            onClick={() => {
+              setTopic([
+                {
+                  id: "1/7",
+                  src: "/imgs/MODULES/NodeModulesInJS.jpg",
+                },
+                {
+                  id: "2/7",
+                  src: "/imgs/MODULES/BrowserModulesInJS.jpg",
+                },
+                {
+                  id: "3/7",
+                  src: "/imgs/MODULES/Export-ImportExcercise.jpg",
+                },
+              ]);
+            }}
+          >
+            Modules
+          </li>
         </ul>
       </nav>
       <div className="card-container">
         {topic.map((img) => {
           return <Card props={img} key={img.id} />;
-      })}
+        })}
       </div>
     </>
   );
