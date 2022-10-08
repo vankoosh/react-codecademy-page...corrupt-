@@ -16,8 +16,6 @@ export default function Parent() {
     { id: "Break Keyword", count:"5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
   ]);
 
-  const [clicked, setClicked] = useState(false)
-
   const onClick = e => {
     console.log(e);
   }
@@ -29,20 +27,15 @@ export default function Parent() {
   const onMouseLeave = e => {
     e.target.style.width = "24vw"
   }
-
-  const onLiClick = e => {
-    if (clicked) {
-      e.target.style.borderBottom = "2px solid black";
-      
-    }
-  }
+  
+  const [clicked, setClicked] = useState(false);
 
   return (
     <>
       <nav>
         <ul>
           {/* LOOPS */}
-          <li onClick={onLiClick}
+          <li 
             onClick={() => {
               setTopic([
                 {
@@ -71,6 +64,7 @@ export default function Parent() {
                   src: "/imgs/LOOPS/BreakKeyword.jpg",
                 },
               ]);
+              setClicked(true)
             }}
           >
             Loops
@@ -431,7 +425,7 @@ export default function Parent() {
                 },
                 {
                   id: "4/7",
-                  src: "/imgs/PROMISES/ConsumingPromisesWith.then().jpg",
+                  src: "/imgs/PROMISES/ConsumingPromisesWith.then()and.catch().jpg",
                 },
                 {
                   id: "5/7",
