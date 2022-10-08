@@ -16,6 +16,15 @@ export default function Parent() {
     { id: "Break Keyword", count:"5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
   ]);
 
+  const onClick = e => {
+    console.log(e);
+  }
+
+  const onMouseOver = e => {
+    console.log(e.target);
+    e.target
+  }
+
   return (
     <>
       <nav>
@@ -490,9 +499,20 @@ export default function Parent() {
         </ul>
       </nav>
       <div className="card-container">
-        {topic.map((img) => {
-          return <Card props={img} key={img.id} />;
-        })}
+        {
+          topic.map((img,index) => {
+            // console.log(topic.length);
+            return <Card
+              props={img}
+              key={img.id}
+              index={index}
+              length={topic.length}
+              onMouseOver={onMouseOver}
+              onClick={onClick}
+            />;
+          }
+          )
+        }
       </div>
     </>
   );

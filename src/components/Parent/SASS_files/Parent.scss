@@ -14,13 +14,12 @@ nav {
   opacity: 0;
   transition: opacity 0.5s;
   background-color: #c5c5c5;
-  blur
   width: 100vw;
-
+  
   &:hover {
     opacity: 1;
   }
-
+  
   ul {
     height: $nav-height;
     list-style-type: none;
