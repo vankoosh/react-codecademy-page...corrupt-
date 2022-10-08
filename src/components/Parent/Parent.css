@@ -10,7 +10,7 @@ nav {
   padding-left: 1rem;
   opacity: 0;
   transition: opacity 0.5s;
-  background-color: #fff;
+  background-color: #c5c5c5;
   width: 100vw;
 }
 nav:hover {
