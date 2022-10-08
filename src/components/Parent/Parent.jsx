@@ -20,9 +20,12 @@ export default function Parent() {
     console.log(e);
   }
 
-  const onMouseOver = e => {
-    console.log(e.target);
-    e.target
+  const onMouseEnter = e => {
+    e.target.style.width = "33vw";
+  }
+
+  const onMouseLeave = e => {
+    e.target.style.width = "24vw"
   }
 
   return (
@@ -507,7 +510,8 @@ export default function Parent() {
               key={img.id}
               index={index}
               length={topic.length}
-              onMouseOver={onMouseOver}
+              onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave}
               onClick={onClick}
             />;
           }
