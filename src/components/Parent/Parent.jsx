@@ -17,7 +17,9 @@ export default function Parent() {
   ]);
 
   const onClick = e => {
-    console.log(e);
+    const src = e.target.getAttribute("src");
+    const div = document.createElement("span").appendChild(document.createElement("img").setAttribute("src",src));
+    
   }
 
   const onMouseEnter = e => {
@@ -28,8 +30,6 @@ export default function Parent() {
     e.target.style.width = "24vw"
   }
   
-  const [clicked, setClicked] = useState(false);
-
   return (
     <>
       <nav>
@@ -64,7 +64,6 @@ export default function Parent() {
                   src: "/imgs/LOOPS/BreakKeyword.jpg",
                 },
               ]);
-              setClicked(true)
             }}
           >
             Loops
