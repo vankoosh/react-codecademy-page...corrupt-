@@ -32,6 +32,15 @@ nav {
       font-size: 1rem;
       font-weight: bold;
       margin-right: 2rem;
+
+      &:hover{
+        color:purple;
+        
+      }
+
+      &:active{
+        color: purple;
+      }
     }
   }
 }

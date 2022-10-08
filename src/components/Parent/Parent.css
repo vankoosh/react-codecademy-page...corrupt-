@@ -29,6 +29,12 @@ nav ul li {
   font-weight: bold;
   margin-right: 2rem;
 }
+nav ul li:hover {
+  color: purple;
+}
+nav ul li:active {
+  color: purple;
+}
 
 .card-container {
   display: grid;

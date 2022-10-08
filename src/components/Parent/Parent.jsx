@@ -16,6 +16,8 @@ export default function Parent() {
     { id: "Break Keyword", count:"5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
   ]);
 
+  const [clicked, setClicked] = useState(false)
+
   const onClick = e => {
     console.log(e);
   }
@@ -28,12 +30,19 @@ export default function Parent() {
     e.target.style.width = "24vw"
   }
 
+  const onLiClick = e => {
+    if (clicked) {
+      e.target.style.borderBottom = "2px solid black";
+      
+    }
+  }
+
   return (
     <>
       <nav>
         <ul>
           {/* LOOPS */}
-          <li
+          <li onClick={onLiClick}
             onClick={() => {
               setTopic([
                 {
@@ -504,7 +513,6 @@ export default function Parent() {
       <div className="card-container">
         {
           topic.map((img,index) => {
-            // console.log(topic.length);
             return <Card
               props={img}
               key={img.id}
