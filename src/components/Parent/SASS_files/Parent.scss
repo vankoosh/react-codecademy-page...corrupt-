@@ -53,7 +53,7 @@ nav {
 
   .modal{
     position: absolute;
-    display:block;
+    display:flex;
     top: 0;
     left: 0;
     width: 100vw;
@@ -62,8 +62,10 @@ nav {
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.5);
 
-    &:modal-img{
-      margin-left: 10rem;
+    .modal-img{
+      width: 25vw;
+      // height: auto;
+      margin: 0 auto;
     }
   }
 }

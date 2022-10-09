@@ -44,7 +44,7 @@ nav ul li:active {
 }
 .card-container .modal {
   position: absolute;
-  display: block;
+  display: flex;
   top: 0;
   left: 0;
   width: 100vw;
@@ -53,6 +53,7 @@ nav ul li:active {
   opacity: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.card-container .modal:modal-img {
-  margin-left: 10rem;
+.card-container .modal .modal-img {
+  width: 25vw;
+  margin: 0 auto;
 }/*# sourceMappingURL=Parent.css.map */
