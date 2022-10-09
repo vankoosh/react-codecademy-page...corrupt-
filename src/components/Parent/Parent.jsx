@@ -2,40 +2,51 @@ import React, { useState } from "react";
 import "./Parent.css";
 import Card from "../Card/Card";
 
-// TODO  add modal to small pics 
+// TODO  add modal to small pics
 
 export default function Parent() {
   const [topic, setTopic] = useState([
-    { id: "For Loop", count:"1/5", src: "/imgs/LOOPS/ForLoop.jpg" },
-    { id: "While Loop", count:"2/5", src: "/imgs/LOOPS/WhileLoop.jpg" },
-    { id: "Do While Loop", count:"3/5", src: "/imgs/LOOPS/DoWhileLoop.jpg" },
+    { id: "For Loop", count: "1/5", src: "/imgs/LOOPS/ForLoop.jpg" },
+    { id: "While Loop", count: "2/5", src: "/imgs/LOOPS/WhileLoop.jpg" },
+    { id: "Do While Loop", count: "3/5", src: "/imgs/LOOPS/DoWhileLoop.jpg" },
     {
       id: "Nested Loop",
-      count:"4/5", src: "/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
+      count: "4/5",
+      src: "/imgs/LOOPS/NestedLoop-ComparingTwoArrays.jpg",
     },
-    { id: "Break Keyword", count:"5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
+    { id: "Break Keyword", count: "5/5", src: "/imgs/LOOPS/BreakKeyword.jpg" },
   ]);
 
-  const onClick = e => {
-    const src = e.target.getAttribute("src");
-    const div = document.createElement("span").appendChild(document.createElement("img").setAttribute("src",src));
-    
-  }
+  const [clicked, setClicked] = useState(true);
 
-  const onMouseEnter = e => {
+  const onClick = (e) => {
+    if (clicked) {
+      const src = e.target.getAttribute("src");
+      const img = document.querySelector(".modal-img");
+      const modal = document.querySelector(".modal");
+
+      modal.style.zIndex = "2";
+      modal.style.opacity = "1";
+      img.setAttribute("src", src);
+
+      setClicked(!clicked);
+    } 
+  };
+
+  const onMouseEnter = (e) => {
     e.target.style.width = "33vw";
-  }
+  };
 
-  const onMouseLeave = e => {
-    e.target.style.width = "24vw"
-  }
-  
+  const onMouseLeave = (e) => {
+    e.target.style.width = "24vw";
+  };
+
   return (
     <>
       <nav>
         <ul>
           {/* LOOPS */}
-          <li 
+          <li
             onClick={() => {
               setTopic([
                 {
@@ -504,9 +515,9 @@ export default function Parent() {
         </ul>
       </nav>
       <div className="card-container">
-        {
-          topic.map((img,index) => {
-            return <Card
+        {topic.map((img, index) => {
+          return (
+            <Card
               props={img}
               key={img.id}
               index={index}
@@ -514,10 +525,16 @@ export default function Parent() {
               onMouseEnter={onMouseEnter}
               onMouseLeave={onMouseLeave}
               onClick={onClick}
-            />;
-          }
-          )
-        }
+            />
+          );
+        })}
+        <span className="modal">
+          <img src="" alt="" className="modal-img" onClick={() => {
+            const modal = document.querySelector(".modal");
+            modal.style.zIndex = "-1";
+            modal.style.opacity = "0";
+          }}/>
+        </span>
       </div>
     </>
   );
